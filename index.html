@@ -23,6 +23,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome読み込み -->
   <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
+  <!-- スライダーのjsライブラリswiper.js読み込み-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +52,9 @@
           <h1 class="text-4xl ml-5">cafe YATSUCO</h1>
         </div>
         <div class="mt-3 md:mt-0">
-          <a href=""><p class="text-2xl text-left">tel:000-000-0000</p></a>
+          <a href="">
+            <p class="text-2xl text-left">tel:000-000-0000</p>
+          </a>
         </div>
       </div>
     </section>
@@ -63,14 +68,41 @@
 
     <!-- 写真エリア -->
     <section class="flex justify-center">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-11/12 md:w-8/12 pt-12">
-        <img class="" src="image/PC/PC_image01.png" alt="subPhoto">
-        <img class="" src="image/PC/PC_image02.png" alt="subPhoto">
-        <img class="" src="image/PC/PC_image03.png" alt="subPhoto">
-        <img class="" src="image/PC/PC_image04.png" alt="subPhoto">
+      <div class="w-11/12 md:w-8/12 pt-12">
+        
+        <div class="title__slider-area">
+          <!-- スライダーのコンテナ　以下swiper.jsの記法 -->
+          <!-- Slider main container -->
+          <div class="swiper mySwiper2 md:hidden">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="swiper-wrapper">
+              <!-- Slides -->
+              <!-- 画像background-imageからimgタグで表示 -->
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image01.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image02.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image03.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image04.png" alt="subPhoto"></div>
+              
+            </div>
+            <!-- 必要に応じてナビボタン -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper mySwiper hidden md:block">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper flex justify-between">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image01.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image02.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image03.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image04.png" alt="subPhoto"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
-
+    
     <!-- 概要 -->
     <section class="flex justify-center">
       <div class="w-11/12 md:w-8/12 pt-12 pb-16">
@@ -90,7 +122,8 @@
             </p>
           </div>
           <div class="flex items-center mt-10 md:mt-0">
-            <h3 class="text-base px-6 w-28 text-center text-white rounded-3xl ml-0 md:ml-24 h-6 c_back-ground-color_dbc">
+            <h3
+              class="text-base px-6 w-28 text-center text-white rounded-3xl ml-0 md:ml-24 h-6 c_back-ground-color_dbc">
               営業時間
             </h3>
             <p class="text-lg ml-5">
@@ -108,7 +141,8 @@
             </p>
           </div>
           <div class="flex items-center mt-10 md:mt-0">
-            <h3 class="text-base px-6 w-28 text-center text-white rounded-3xl h-6  ml-0 md:ml-24 c_back-ground-color_dbc">
+            <h3
+              class="text-base px-6 w-28 text-center text-white rounded-3xl h-6  ml-0 md:ml-24 c_back-ground-color_dbc">
               定休日
             </h3>
             <p class="text-lg ml-5">
@@ -287,7 +321,8 @@
         <div class="flex justify-between flex-col md:flex-row pt-8 items-center">
           <div class="w-full md:w-6/12">
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 店 名
               </h3>
               <p class="text-lg  ml-6">
@@ -295,7 +330,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 ジャンル
               </h3>
               <p class="text-lg  ml-6">
@@ -303,7 +339,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 地 域
               </h3>
               <p class="text-lg  ml-6">
@@ -311,7 +348,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 営業時間
               </h3>
               <p class="text-lg  ml-6">
@@ -320,7 +358,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 定休日
               </h3>
               <p class="text-lg  ml-6">
@@ -328,7 +367,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 住 所
               </h3>
               <p class="text-lg  ml-6">
@@ -336,7 +376,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 電 話
               </h3>
               <p class="text-lg  ml-6">
@@ -344,7 +385,8 @@
               </p>
             </div>
             <div class="flex justify-start mb-4">
-              <h3 class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
+              <h3
+                class="text-base h-6 ml-8 px-6 text-white rounded-3xl min-w-max w-28 text-center c_back-ground-color_dbc">
                 メール
               </h3>
               <p class="text-lg  ml-6">
@@ -354,10 +396,14 @@
           </div>
           <div class="w-full md:w-5/12">
             <div class="flex justify-between md:justify-end w-full mt-28 md:mt-0">
-              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5" src="image/PC/PC_icon_facebook.png" alt="sns"></a>
-              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5" src="image/PC/PC_icon_twitter.png" alt="sns"></a>
-              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5" src="image/PC/PC_icon_LINE.png" alt="sns"></a>
-              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5" src="image/PC/PC_icon_Instagram.png" alt="sns"></a>
+              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5"
+                  src="image/PC/PC_icon_facebook.png" alt="sns"></a>
+              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5"
+                  src="image/PC/PC_icon_twitter.png" alt="sns"></a>
+              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5"
+                  src="image/PC/PC_icon_LINE.png" alt="sns"></a>
+              <a class="flex justify-center w-8/12 h-8/12" href=""><img class="w-8/12 ml-0 md:ml-5"
+                  src="image/PC/PC_icon_Instagram.png" alt="sns"></a>
             </div>
             <div class="w-full pt-10">
               <iframe class="w-full"
@@ -391,10 +437,10 @@
       <div class="w-11/12 md:w-8/12 pt-20 pb-20">
         <div class="flex">
           <button class="mr-8">
-            インタビュー
+            <img src="image/PC/intavew_bn01.png" alt="インタビューページボタン">
           </button>
           <button class="">
-            はちナビガイド
+            <img src="image/PC/8navi_bn01.png" alt="ハチナビページボタン">
           </button>
         </div>
         <div class="pt-36">
@@ -418,7 +464,8 @@
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <!-- javaScriptの読み込み -->
     <script src="script/script.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- javascript for slider -->
+    <script src="script/slider-script.js"></script>    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src=""></script>
 
 </body>

@@ -15,4 +15,9 @@
 
 .c_border-dbc {
   border: #52D0DD 1px solid;
+}
+
+.c_margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */
