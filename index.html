@@ -69,20 +69,24 @@
     <!-- 写真エリア -->
     <section class="flex justify-center">
       <div class="w-11/12 md:w-8/12 pt-12">
-        
+
         <div class="title__slider-area">
           <!-- スライダーのコンテナ　以下swiper.jsの記法 -->
           <!-- Slider main container -->
-          <div class="swiper mySwiper2 md:hidden">
+          <div class="swiper mySwiper2 w-3/5 md:hidden">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" id="swiper-wrapper">
               <!-- Slides -->
               <!-- 画像background-imageからimgタグで表示 -->
-              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image01.png" alt="subPhoto"></div>
-              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image02.png" alt="subPhoto"></div>
-              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image03.png" alt="subPhoto"></div>
-              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image04.png" alt="subPhoto"></div>
-              
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image01.png"
+                  alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image02.png"
+                  alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image03.png"
+                  alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image c_margin-x-auto" src="image/PC/PC_image04.png"
+                  alt="subPhoto"></div>
+
             </div>
             <!-- 必要に応じてナビボタン -->
             <div class="swiper-button-prev"></div>
@@ -92,10 +96,14 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper flex justify-between">
               <!-- Slides -->
-              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image01.png" alt="subPhoto"></div>
-              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image02.png" alt="subPhoto"></div>
-              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image03.png" alt="subPhoto"></div>
-              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image04.png" alt="subPhoto"></div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image01.png" alt="subPhoto">
+              </div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image02.png" alt="subPhoto">
+              </div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image03.png" alt="subPhoto">
+              </div>
+              <div class="swiper-slide"><img class="swiper-slide-image" src="image/PC/PC_image04.png" alt="subPhoto">
+              </div>
             </div>
           </div>
         </div>
@@ -114,7 +122,8 @@
         </p>
         <div class="flex flex-col md:flex-row items-start justify-start pt-6">
           <div class="flex items-center">
-            <h3 class="text-sm md:text-base px-2 md:px-6 w-24 md:w-28 text-center text-white rounded-3xl h-6 leading-normal c_back-ground-color_dbc">
+            <h3
+              class="text-sm md:text-base px-2 md:px-6 w-24 md:w-28 text-center text-white rounded-3xl h-6 leading-normal c_back-ground-color_dbc">
               ジャンル
             </h3>
             <p class="text-base md:text-lg ml-5">
@@ -133,7 +142,8 @@
         </div>
         <div class="flex flex-col md:flex-row items-start justify-start mt-4">
           <div class="flex items-center">
-            <h3 class="text-sm md:text-base px-2 md:px-6 w-24 md:w-28 text-center text-white rounded-3xl h-6 leading-normal c_back-ground-color_dbc">
+            <h3
+              class="text-sm md:text-base px-2 md:px-6 w-24 md:w-28 text-center text-white rounded-3xl h-6 leading-normal c_back-ground-color_dbc">
               地 域
             </h3>
             <p class="text-base md:text-lg ml-5">
@@ -156,12 +166,11 @@
     <!-- メニュー -->
     <section class="flex justify-center c_back-ground-color_lbc">
       <div class="w-11/12 md:w-8/12 pt-9 pb-11">
-        <div class="flex justify-center items-center">
-          <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
-          <h2 class="text-3xl md:text-4xl mx-6 c_text-color_dbc">
+        <div class="flex justify-center items-center relative">
+          <h2 class="text-3xl md:text-4xl px-6 z-10 c_back-ground-color_lbc c_text-color_dbc">
             MENU サービス
           </h2>
-          <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
+          <div class="h-0  w-full w-4/5 md:w-3/5 absolute c_border-dbc"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-9 pt-9">
           <div class="p-4 md:p-8 bg-white">
@@ -287,12 +296,12 @@
           <img class="w-full" src="image/PC/PC_image_aboutus.png" alt="About Us">
         </div>
         <div class="w-full md:w-6/12 mt-12 md:mt-0">
-          <div class="flex justify-center items-center">
-            <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
-            <h2 class="text-3xl md:text-4xl mx-6 c_text-color_dbc">
+
+          <div class="flex justify-center items-center relative">
+            <h2 class="text-3xl md:text-4xl px-6 z-10 bg-white c_text-color_dbc">
               About Us
             </h2>
-            <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
+            <div class="h-0  w-full w-4/5 md:w-3/5 absolute c_border-dbc"></div>
           </div>
           <div class="mt-8">
             <p class="text-base md:text-lg mx-0 md:mx-14">
@@ -310,13 +319,12 @@
 
     <!-- お店情報 -->
     <section class="flex justify-center">
-      <div class="w-11/12 md:w-8/12 pt-28 pb-20">
-        <div class="flex justify-center items-center">
-          <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
-          <h2 class="text-3xl md:text-4xl mx-6 c_text-color_dbc">
+      <div class="w-11/12 md:w-8/12 pt-10 pb-20">
+        <div class="flex justify-center items-center relative">
+          <h2 class="text-3xl md:text-4xl px-6 z-10 bg-white c_text-color_dbc">
             お店情報
           </h2>
-          <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
+          <div class="h-0  w-full w-4/5 md:w-3/5 absolute c_border-dbc"></div>
         </div>
         <div class="flex justify-between flex-col md:flex-row pt-8 items-center">
           <div class="w-full md:w-6/12">
@@ -419,12 +427,11 @@
     <!-- お問い合わせ -->
     <section class="flex justify-center c_back-ground-color_lbc">
       <div class="w-11/12 md:w-8/12 pt-10 pb-20">
-        <div class="flex justify-center items-center">
-          <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
-          <h2 class="text-3xl md:text-4xl mx-6 c_text-color_dbc">
-            お問い合わせ
+        <div class="flex justify-center items-center relative">
+          <h2 class="text-3xl md:text-4xl px-6 z-10 c_back-ground-color_lbc c_text-color_dbc">
+            MENU サービス
           </h2>
-          <div class="h-0 w-12 md:w-20 md:w-24 md:w-28 c_border-dbc"></div>
+          <div class="h-0  w-full w-4/5 md:w-3/5 absolute c_border-dbc"></div>
         </div>
         <div class="">
 
@@ -435,11 +442,11 @@
     <!-- ガイドボタン -->
     <section class="flex justify-center">
       <div class="w-11/12 md:w-8/12 pt-20 pb-20">
-        <div class="flex">
-          <button class="mr-8">
+        <div class="flex flex-col md:flex-row">
+          <button class="md:mr-8 mr-0 my-5">
             <img src="image/PC/intavew_bn01.png" alt="インタビューページボタン">
           </button>
-          <button class="">
+          <button class="my-5">
             <img src="image/PC/8navi_bn01.png" alt="ハチナビページボタン">
           </button>
         </div>
@@ -465,7 +472,7 @@
     <!-- javaScriptの読み込み -->
     <script src="script/script.js"></script>
     <!-- javascript for slider -->
-    <script src="script/slider-script.js"></script>    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="script/slider-script.js"></script> <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src=""></script>
 
 </body>
