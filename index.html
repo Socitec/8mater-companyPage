@@ -425,16 +425,46 @@
     </section>
 
     <!-- お問い合わせ -->
+    <!-- 一時的に表示 後で淺川さんからコード送ってもらう-->
     <section class="flex justify-center c_back-ground-color_lbc">
-      <div class="w-11/12 md:w-8/12 pt-10 pb-20">
+      <div class="w-11/12 md:w-6/12 pt-10 pb-20">
         <div class="flex justify-center items-center relative">
           <h2 class="text-3xl md:text-4xl px-6 z-10 c_back-ground-color_lbc c_text-color_dbc">
-            MENU サービス
+            お問い合わせ
           </h2>
           <div class="h-0  w-full w-4/5 md:w-3/5 absolute c_border-dbc"></div>
         </div>
         <div class="">
+          <form id="main_contact" method="post" action="">
+            <div class="flex flex-col md:flex-row justify-start md:justify-between mt-10">
+              <label class="text-xl leading-10" for="name">
+                お名前
+              </label>
+              <input type="text" class="w-full md:w-9/12 bg-white mt-3 md:mt-0 h-10 border border-solid border-gray-600 text-xl" id="name" name="name" placeholder="氏名" value="">
+            </div>
+            <div class="flex flex-col md:flex-row justify-start md:justify-between mt-10">
+              <label class="text-xl leading-10" for="mail">
+                mail
+              </label>
+              <input type="text" class="w-full md:w-9/12 bg-white mt-3 md:mt-0 h-10 border border-solid border-gray-600 text-xl" id="mail" name="mail" placeholder="mail" value="">
+            </div>
+            <div class="flex flex-col md:flex-row justify-start md:justify-between mt-8">
+              <label class="text-xl leading-10" for="body">
+                お問い合わせ内容
+              </label>
+              <textarea class="w-full md:w-9/12 bg-white mt-3 md:mt-0 border border-solid border-gray-600 text-xl" id="body" name="body" placeholder="お問い合わせ内容をお書きください" rows="5">
 
+              </textarea>
+            </div>
+            <div class="mt-5">
+              <p class="text-xl ">
+                ※お急ぎの方は、お電話にてお問合せお願いいたします。
+              </p>
+            </div>
+            <div class="flex justify-center mt-16">
+              <button type="submit" class="px-28 text-2xl leading-10 bg-gray-600 rounded-full text-white">この内容で送信する</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
